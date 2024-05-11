@@ -6,7 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-
-  constructor() {}
+  public base: number;
+  public altura: number;
+  public resultado: number;
+  constructor() {
+    this.resultado (this.base*this.altura)/ 2
+  }
 
 }

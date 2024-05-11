@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Calculando o triangulo
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -13,8 +13,11 @@
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-item>
+    <ion-input type="number" label="Base" color="primary" labelPlacement="floating" placeholder="Digite a base" [(ngModel)]="base"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input type="number" label="Altura" color="primary" labelPlacement="floating" placeholder="Digite a altura"[(ngModel)]="altura"></ion-input>
+  </ion-item>
+
 </ion-content>
