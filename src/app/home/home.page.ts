@@ -6,11 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-  public base: number;
-  public altura: number;
-  public resultado: number;
-  constructor() {
-    this.resultado (this.base*this.altura)/ 2
+  public base!: number;
+  public altura!: number;
+  public resultado!: string;
+  constructor() {}
+  
+  public calcularArea() : void{
+    this.resultado = "A área do triangulo é: " + (this.base*this.altura)/ 2 + "cm².";
   }
 
 }

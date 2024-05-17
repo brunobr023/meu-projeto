@@ -12,12 +12,29 @@
       <ion-title size="large">Blank</ion-title>
     </ion-toolbar>
   </ion-header>
-
+ <div class="container">
   <ion-item>
     <ion-input type="number" label="Base" color="primary" labelPlacement="floating" placeholder="Digite a base" [(ngModel)]="base"></ion-input>
   </ion-item>
   <ion-item>
     <ion-input type="number" label="Altura" color="primary" labelPlacement="floating" placeholder="Digite a altura"[(ngModel)]="altura"></ion-input>
   </ion-item>
-
+  <ion-button color="danger" (click)="calcularArea()">Calcular</ion-button>
+  <br>
+  <ion-label>Resposta</ion-label>
+  <br>
+  <ion-label color="warning">{{resultado}}</ion-label>
+</div>
 </ion-content>
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="home">
+      <ion-icon name="play-circle"></ion-icon>
+      Triangulo
+    </ion-tab-button>
+    <ion-tab-button tab="radio">
+      <ion-icon name="radio"></ion-icon>
+      ?
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
