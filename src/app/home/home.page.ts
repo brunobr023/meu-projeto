@@ -23,14 +23,14 @@ export class HomePage {
 
   canDismiss = async () => {
     const actionSheet = await this.actionSheetCtrl.create({
-      header: 'Are you sure?',
+      header: 'Você tem certeza? Isso não guardará as informações.',
       buttons: [
         {
-          text: 'Yes',
+          text: 'Sim',
           role: 'confirm',
         },
         {
-          text: 'No',
+          text: 'Não',
           role: 'cancel',
         },
       ],
